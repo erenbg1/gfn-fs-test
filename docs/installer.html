@@ -324,6 +324,10 @@
             <div id="fileName" class="value file-name mono"></div>
           </div>
           <div class="field wide">
+            <span class="label">Save as</span>
+            <div id="saveAsName" class="value file-name mono"></div>
+          </div>
+          <div class="field wide">
             <span class="label">Current target folder</span>
             <div id="targetFolder" class="value mono"></div>
           </div>
@@ -389,6 +393,7 @@
       changedTarget: document.getElementById("changedTarget"),
       moduleName: document.getElementById("moduleName"),
       fileName: document.getElementById("fileName"),
+      saveAsName: document.getElementById("saveAsName"),
       targetFolder: document.getElementById("targetFolder"),
       fileProgress: document.getElementById("fileProgress"),
       groupProgress: document.getElementById("groupProgress"),
@@ -514,6 +519,7 @@
         els.targetChange.classList.remove("active");
         els.moduleName.textContent = "Complete";
         els.fileName.textContent = "Complete";
+        els.saveAsName.textContent = "Complete";
         els.targetFolder.textContent = "";
         els.fileProgress.textContent = `${files.length} / ${files.length}`;
         els.groupProgress.textContent = `${groups.length} / ${groups.length}`;
@@ -531,6 +537,7 @@
 
       els.moduleName.textContent = record.module;
       els.fileName.textContent = record.filename;
+      els.saveAsName.textContent = record.filename;
       els.targetFolder.textContent = record.targetDirectory;
       els.changedTarget.textContent = record.targetDirectory;
       els.fileProgress.textContent = `${index + 1} / ${files.length}`;
@@ -544,17 +551,40 @@
       els.status.textContent = `File ${positionInGroup} of ${group.files.length} in this target folder.`;
     }
 
-    function downloadCurrentFile() {
+    async function downloadCurrentFile() {
       if (index >= files.length) return;
       const record = files[index];
+      const url = `payload/${record.relativePath}`;
+      els.downloadBtn.disabled = true;
+      els.status.textContent = `Preparing ${record.filename}...`;
+      try {
+        const response = await fetch(url, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        const blob = await response.blob();
+        if (blob.size !== record.size) {
+          throw new Error(`size mismatch: expected ${record.size}, got ${blob.size}`);
+        }
+        const objectUrl = URL.createObjectURL(blob);
+        triggerBlobDownload(objectUrl, record.filename);
+        setTimeout(() => URL.revokeObjectURL(objectUrl), 60000);
+        els.status.textContent = `Download started as ${record.filename}. After saving it to the displayed folder, click MARK SAVED & NEXT.`;
+      } catch (error) {
+        els.status.textContent = `Download failed for ${record.filename}: ${error.message}`;
+      } finally {
+        els.downloadBtn.disabled = index >= files.length;
+      }
+    }
+
+    function triggerBlobDownload(objectUrl, filename) {
       const link = document.createElement("a");
-      link.href = `payload/${record.relativePath}`;
-      link.download = record.filename;
+      link.href = objectUrl;
+      link.download = filename;
       link.rel = "noopener";
       document.body.appendChild(link);
       link.click();
       link.remove();
-      els.status.textContent = "Download started. After saving it to the displayed folder, click MARK SAVED & NEXT.";
     }
 
     function nextFile() {
