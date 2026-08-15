@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GFN File System API Test</title>
+</head>
+<body>
+  <h2>GFN File System Access Test</h2>
+
+  <p id="status">Checking API...</p>
+
+  <button id="test">Select Folder & Write Test File</button>
+
+  <pre id="log"></pre>
+
+<script>
+const status = document.getElementById("status");
+const log = document.getElementById("log");
+
+function out(x) {
+  log.textContent += x + "\n";
+}
+
+if (typeof window.showDirectoryPicker === "function") {
+  status.textContent = "showDirectoryPicker: AVAILABLE";
+} else {
+  status.textContent = "showDirectoryPicker: NOT AVAILABLE";
+}
+
+document.getElementById("test").onclick = async () => {
+  try {
+    out("Opening directory picker...");
+
+    const dir = await window.showDirectoryPicker({
+      mode: "readwrite"
+    });
+
+    out("Selected: " + dir.name);
+
+    const folder = await dir.getDirectoryHandle("GFNProbe", {
+      create: true
+    });
+
+    out("Created/opened GFNProbe");
+
+    const file = await folder.getFileHandle("hello.txt", {
+      create: true
+    });
+
+    const writable = await file.createWritable();
+
+    await writable.write(
+      "GFN filesystem write test\n" +
+      new Date().toISOString()
+    );
+
+    await writable.close();
+
+    out("SUCCESS");
+    out("Created: GFNProbe/hello.txt");
+  } catch (e) {
+    out("ERROR");
+    out(e.name + ": " + e.message);
+    console.error(e);
+  }
+};
+</script>
+</body>
+</html>
