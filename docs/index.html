@@ -23,6 +23,8 @@ pre { white-space:pre-wrap; }
 <button id="dir">1 — showDirectoryPicker</button>
 <button id="open">2 — showOpenFilePicker</button>
 <button id="save">3 — showSaveFilePicker</button>
+<button id="pathsave">6 — Save Picker Relative Path Test</button>
+
 
 <p>4 — webkitdirectory:</p>
 <input id="webkit" type="file" webkitdirectory multiple>
@@ -85,6 +87,27 @@ document.getElementById("save").onclick = async () => {
     out("SAVE WRITE SUCCESS");
   } catch(e) {
     out("SAVE ERROR: " + e.name + " — " + e.message);
+  }
+};
+
+
+document.getElementById("pathsave").onclick = async () => {
+  try {
+    out("PATHSAVE: opening...");
+
+    const h = await showSaveFilePicker({
+      suggestedName: "GFNProbe\\\\NestedTest.txt"
+    });
+
+    out("PATHSAVE HANDLE: " + h.name);
+
+    const w = await h.createWritable();
+    await w.write("relative path test");
+    await w.close();
+
+    out("PATHSAVE WRITE SUCCESS");
+  } catch(e) {
+    out("PATHSAVE ERROR: " + e.name + " — " + e.message);
   }
 };
 
