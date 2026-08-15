@@ -24,6 +24,9 @@ pre { white-space:pre-wrap; }
 <button id="open">2 — showOpenFilePicker</button>
 <button id="save">3 — showSaveFilePicker</button>
 <button id="pathsave">6 — Save Picker Relative Path Test</button>
+<button id="dlforward">7 — Download Path Test (forward slash)</button>
+<button id="dlback">8 — Download Path Test (backslash)</button>
+
 
 
 <p>4 — webkitdirectory:</p>
@@ -109,6 +112,31 @@ document.getElementById("pathsave").onclick = async () => {
   } catch(e) {
     out("PATHSAVE ERROR: " + e.name + " — " + e.message);
   }
+};
+
+
+function blobDownload(filename, text) {
+  const blob = new Blob([text], {type: "text/plain"});
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  setTimeout(() => URL.revokeObjectURL(url), 5000);
+}
+
+document.getElementById("dlforward").onclick = () => {
+  out("DOWNLOAD / test...");
+  blobDownload("GFNProbe/SubModule.xml", "forward slash test");
+};
+
+document.getElementById("dlback").onclick = () => {
+  out("DOWNLOAD \\\\ test...");
+  blobDownload("GFNProbe\\\\SubModule.xml", "backslash test");
 };
 
 document.getElementById("webkit").onchange = e => {
