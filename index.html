@@ -32,6 +32,8 @@ pre { white-space:pre-wrap; }
 <p>4 — webkitdirectory:</p>
 <input id="webkit" type="file" webkitdirectory multiple>
 
+
+<button id="batch3">9 — TEST: Download 3 Files</button>
 <div id="drop">
 5 — DRAG A FILE OR FOLDER HERE
 </div>
@@ -114,6 +116,36 @@ document.getElementById("pathsave").onclick = async () => {
   }
 };
 
+
+
+document.getElementById("batch3").onclick = async () => {
+  out("BATCH3 START");
+
+  const files = [
+    ["GFN_BATCH_1.txt", "file one"],
+    ["GFN_BATCH_2.txt", "file two"],
+    ["GFN_BATCH_3.txt", "file three"]
+  ];
+
+  for (const [name, text] of files) {
+    const blob = new Blob([text], {type:"text/plain"});
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+
+    out("TRIGGERED: " + name);
+
+    await new Promise(r => setTimeout(r, 1200));
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
+  }
+
+  out("BATCH3 DONE");
+};
 
 function blobDownload(filename, text) {
   const blob = new Blob([text], {type: "text/plain"});
