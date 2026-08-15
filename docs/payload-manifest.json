@@ -1,0 +1,1042 @@
+[
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/0Harmony.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "0Harmony.dll",
+    "size": 292352
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/Bannerlord.Harmony.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.Harmony.dll",
+    "size": 198144
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/Mono.Cecil.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "Mono.Cecil.dll",
+    "size": 363008
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/Mono.Cecil.Mdb.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "Mono.Cecil.Mdb.dll",
+    "size": 43520
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/Mono.Cecil.Pdb.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "Mono.Cecil.Pdb.dll",
+    "size": 90112
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/Mono.Cecil.Rocks.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "Mono.Cecil.Rocks.dll",
+    "size": 29696
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/MonoMod.Backports.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "MonoMod.Backports.dll",
+    "size": 117760
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/MonoMod.Core.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "MonoMod.Core.dll",
+    "size": 436224
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/MonoMod.Iced.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "MonoMod.Iced.dll",
+    "size": 646656
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/MonoMod.ILHelpers.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "MonoMod.ILHelpers.dll",
+    "size": 6656
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/MonoMod.Utils.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "MonoMod.Utils.dll",
+    "size": 346112
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/bin/Win64_Shipping_Client/System.ValueTuple.dll",
+    "targetDirectory": "2859188632\\bin\\Win64_Shipping_Client\\",
+    "filename": "System.ValueTuple.dll",
+    "size": 25232
+  },
+  {
+    "module": "Harmony",
+    "workshopId": "2859188632",
+    "relativePath": "2859188632/SubModule.xml",
+    "targetDirectory": "2859188632\\",
+    "filename": "SubModule.xml",
+    "size": 2259
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.dll",
+    "size": 385024
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.0.0.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.0.0.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.0.1.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.0.1.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.0.2.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.0.2.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.0.3.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.0.3.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.1.0.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.1.0.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.1.1.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.1.1.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.1.2.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.1.2.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.1.3.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.1.3.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.1.4.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.1.4.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.1.5.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.1.5.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.1.6.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.1.6.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.2.10.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.2.10.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.2.11.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.2.11.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.2.12.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.2.12.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.2.4.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.2.4.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.2.5.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.2.5.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.2.6.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.2.6.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.2.7.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.2.7.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.2.8.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.2.8.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.2.9.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.2.9.dll",
+    "size": 92672
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.10.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.10.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.11.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.11.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.12.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.12.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.13.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.13.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.14.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.14.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.15.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.15.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.4.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.4.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.5.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.5.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.6.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.6.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.7.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.7.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.8.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.8.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.3.9.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.3.9.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.4.0.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.4.0.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.4.1.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.4.1.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.4.2.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.4.2.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.4.3.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.4.3.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.4.4.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.4.4.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.4.5.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.4.5.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.4.6.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.4.6.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Bannerlord.ButterLib.Implementation.1.4.7.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ButterLib.Implementation.1.4.7.dll",
+    "size": 93184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/BUTR.CrashReport.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "BUTR.CrashReport.dll",
+    "size": 6498304
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/BUTR.CrashReport.Models.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "BUTR.CrashReport.Models.dll",
+    "size": 64512
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/BUTR.CrashReport.Renderer.Html.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "BUTR.CrashReport.Renderer.Html.dll",
+    "size": 68096
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/BUTR.CrashReport.Renderer.ImGui.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "BUTR.CrashReport.Renderer.ImGui.dll",
+    "size": 6175744
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/BUTR.CrashReport.Renderer.WinForms.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "BUTR.CrashReport.Renderer.WinForms.dll",
+    "size": 17408
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/BUTR.CrashReport.Renderer.Zip.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "BUTR.CrashReport.Renderer.Zip.dll",
+    "size": 8704
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/cimgui.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "cimgui.dll",
+    "size": 1274368
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/glfw3.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "glfw3.dll",
+    "size": 232960
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Microsoft.Bcl.HashCode.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Microsoft.Bcl.HashCode.dll",
+    "size": 23424
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+    "size": 36360
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Microsoft.Extensions.DependencyInjection.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Microsoft.Extensions.DependencyInjection.dll",
+    "size": 44552
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Microsoft.Extensions.Logging.Abstractions.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Microsoft.Extensions.Logging.Abstractions.dll",
+    "size": 46600
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Microsoft.Extensions.Logging.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Microsoft.Extensions.Logging.dll",
+    "size": 30728
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Microsoft.Extensions.Options.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Microsoft.Extensions.Options.dll",
+    "size": 26120
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Microsoft.Extensions.Primitives.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Microsoft.Extensions.Primitives.dll",
+    "size": 33288
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Serilog.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Serilog.dll",
+    "size": 140800
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Serilog.Extensions.Logging.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Serilog.Extensions.Logging.dll",
+    "size": 17408
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/Serilog.Sinks.File.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "Serilog.Sinks.File.dll",
+    "size": 33280
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/System.Buffers.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "System.Buffers.dll",
+    "size": 20856
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/System.Collections.Immutable.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "System.Collections.Immutable.dll",
+    "size": 180096
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/System.Memory.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "System.Memory.dll",
+    "size": 141184
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/System.Numerics.Vectors.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "System.Numerics.Vectors.dll",
+    "size": 115856
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/System.Reflection.Metadata.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "System.Reflection.Metadata.dll",
+    "size": 460664
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/bin/Win64_Shipping_Client/System.Runtime.CompilerServices.Unsafe.dll",
+    "targetDirectory": "2859232415\\bin\\Win64_Shipping_Client\\",
+    "filename": "System.Runtime.CompilerServices.Unsafe.dll",
+    "size": 16768
+  },
+  {
+    "module": "ButterLib",
+    "workshopId": "2859232415",
+    "relativePath": "2859232415/SubModule.xml",
+    "targetDirectory": "2859232415\\",
+    "filename": "SubModule.xml",
+    "size": 2747
+  },
+  {
+    "module": "UIExtenderEx",
+    "workshopId": "2859222409",
+    "relativePath": "2859222409/bin/Win64_Shipping_Client/Bannerlord.UIExtenderEx.dll",
+    "targetDirectory": "2859222409\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.UIExtenderEx.dll",
+    "size": 269824
+  },
+  {
+    "module": "UIExtenderEx",
+    "workshopId": "2859222409",
+    "relativePath": "2859222409/SubModule.xml",
+    "targetDirectory": "2859222409\\",
+    "filename": "SubModule.xml",
+    "size": 2491
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/AssetPackages/pack0.tpac",
+    "targetDirectory": "2859238197\\AssetPackages\\",
+    "filename": "pack0.tpac",
+    "size": 58215
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.0.0.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.0.0.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.0.1.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.0.1.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.0.2.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.0.2.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.0.3.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.0.3.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.1.0.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.1.0.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.1.1.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.1.1.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.1.2.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.1.2.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.1.3.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.1.3.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.1.4.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.1.4.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.1.5.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.1.5.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.1.6.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.1.6.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.2.10.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.2.10.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.2.11.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.2.11.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.2.12.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.2.12.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.2.4.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.2.4.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.2.5.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.2.5.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.2.6.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.2.6.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.2.7.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.2.7.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.2.8.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.2.8.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.2.9.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.2.9.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.10.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.10.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.11.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.11.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.12.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.12.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.13.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.13.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.14.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.14.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.15.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.15.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.4.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.4.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.5.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.5.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.6.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.6.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.7.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.7.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.8.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.8.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.3.9.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.3.9.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.4.0.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.4.0.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.4.1.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.4.1.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.4.2.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.4.2.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.4.3.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.4.3.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.4.4.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.4.4.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.4.5.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.4.5.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.4.6.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.4.6.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.MBOptionScreen.v1.4.7.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.MBOptionScreen.v1.4.7.dll",
+    "size": 315904
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/Bannerlord.ModuleLoader.Bannerlord.MBOptionScreen.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "Bannerlord.ModuleLoader.Bannerlord.MBOptionScreen.dll",
+    "size": 1265664
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/MCM.UI.Adapter.MCMv5.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "MCM.UI.Adapter.MCMv5.dll",
+    "size": 81408
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/bin/Win64_Shipping_Client/MCMv5.dll",
+    "targetDirectory": "2859238197\\bin\\Win64_Shipping_Client\\",
+    "filename": "MCMv5.dll",
+    "size": 528896
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/EmAssetPackages/GauntletUI/GauntletUI.tpac",
+    "targetDirectory": "2859238197\\EmAssetPackages\\GauntletUI\\",
+    "filename": "GauntletUI.tpac",
+    "size": 58215
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/GUI/Bannerlord.MBOptionScreenSpriteData.xml",
+    "targetDirectory": "2859238197\\GUI\\",
+    "filename": "Bannerlord.MBOptionScreenSpriteData.xml",
+    "size": 1502
+  },
+  {
+    "module": "MCM",
+    "workshopId": "2859238197",
+    "relativePath": "2859238197/SubModule.xml",
+    "targetDirectory": "2859238197\\",
+    "filename": "SubModule.xml",
+    "size": 3289
+  },
+  {
+    "module": "BetterTime",
+    "workshopId": "2875960358",
+    "relativePath": "2875960358/bin/Win64_Shipping_Client/BetterTime.dll",
+    "targetDirectory": "2875960358\\bin\\Win64_Shipping_Client\\",
+    "filename": "BetterTime.dll",
+    "size": 15872
+  },
+  {
+    "module": "BetterTime",
+    "workshopId": "2875960358",
+    "relativePath": "2875960358/SubModule.xml",
+    "targetDirectory": "2875960358\\",
+    "filename": "SubModule.xml",
+    "size": 996
+  }
+]

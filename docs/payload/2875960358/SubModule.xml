@@ -1,0 +1,29 @@
+ <Module>
+     <Name value="Better Time"/>
+     <Id value="BetterTime"/>
+     <Version value="v1.1.2"/>
+    <SingleplayerModule value="true"/>
+    <MultiplayerModule value="false"/>
+    <Official value="false"/>
+    <DependedModules>
+        <DependedModule Id="Bannerlord.UIExtenderEx"/>
+        <DependedModule Id="Bannerlord.MBOptionScreen"/>
+        <DependedModule Id="Native"/>
+        <DependedModule Id="SandBoxCore"/>
+        <DependedModule Id="Sandbox"/>
+        <DependedModule Id="CustomBattle"/>
+        <DependedModule Id="StoryMode"/>
+    </DependedModules>
+     <SubModules>
+         <SubModule>
+             <Name value="BetterTime"/>
+             <DLLName value="BetterTime.dll"/>
+             <SubModuleClassType value="BetterTime.Main"/>
+             <Tags>
+                 <Tag key="DedicatedServerType" value="none" />
+                 <Tag key="IsNoRenderModeElement" value="false" />
+             </Tags>
+         </SubModule>
+     </SubModules>
+     <Xmls/>
+ </Module>

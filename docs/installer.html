@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GFN Bannerlord Mod Installer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111317;
+      --panel: #1a1e25;
+      --panel-2: #202631;
+      --text: #f1f5f9;
+      --muted: #aeb8c7;
+      --line: #354052;
+      --accent: #f2c14e;
+      --accent-2: #55c2ff;
+      --danger: #ffb454;
+      --ok: #7bd88f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+
+    main {
+      width: min(1180px, calc(100vw - 28px));
+      margin: 0 auto;
+      padding: 24px 0 40px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    code,
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      overflow-wrap: anywhere;
+    }
+
+    .header {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .base {
+      padding: 12px 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.6fr .9fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .current {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .field {
+      min-height: 86px;
+      padding: 12px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .field.wide {
+      grid-column: 1 / -1;
+    }
+
+    .value {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .file-name {
+      color: var(--accent-2);
+      font-size: 20px;
+    }
+
+    .target-change {
+      display: none;
+      padding: 14px;
+      background: #332814;
+      border: 2px solid var(--danger);
+      border-radius: 8px;
+    }
+
+    .target-change.active {
+      display: block;
+    }
+
+    .target-change strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--danger);
+      font-size: 19px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 10px;
+    }
+
+    .secondary-buttons {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    button {
+      min-height: 48px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel-2);
+      color: var(--text);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border-color: var(--accent-2);
+    }
+
+    button.primary {
+      background: var(--accent);
+      color: #17130a;
+      border-color: var(--accent);
+    }
+
+    button.next {
+      background: #245c3a;
+      border-color: #338751;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: .5;
+    }
+
+    .progress-bar {
+      height: 14px;
+      overflow: hidden;
+      background: #0c0f13;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      transition: width .2s ease;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .stat {
+      padding: 10px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 19px;
+    }
+
+    .notice {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    details {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .folder-list,
+    .group-list {
+      display: grid;
+      gap: 6px;
+      max-height: 360px;
+      margin-top: 12px;
+      overflow: auto;
+      padding-right: 4px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .group-list div.current-group {
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    .complete {
+      display: none;
+      padding: 16px;
+      background: #15351f;
+      border: 1px solid #347a48;
+      border-radius: 8px;
+      color: var(--ok);
+      font-weight: 800;
+    }
+
+    .complete.active {
+      display: block;
+    }
+
+    @media (max-width: 860px) {
+      main {
+        width: min(100vw - 20px, 720px);
+        padding-top: 16px;
+      }
+
+      .layout,
+      .grid,
+      .buttons,
+      .secondary-buttons,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="header">
+      <div>
+        <h1>GFN Bannerlord Mod Installer</h1>
+        <p class="notice">Each download button press starts exactly one normal browser download. Save each file into the displayed target folder.</p>
+      </div>
+      <div class="base">
+        <span class="label">Base target</span>
+        <div class="mono">C:\Program Files (x86)\Steam\steamapps\workshop\content\261550\</div>
+      </div>
+      <details>
+        <summary>Required folders to create</summary>
+        <div id="folderList" class="folder-list"></div>
+      </details>
+    </section>
+
+    <section class="layout">
+      <div class="panel current">
+        <h2>Current File</h2>
+        <div id="complete" class="complete">All files are marked saved.</div>
+        <div id="targetChange" class="target-change">
+          <strong>⚠ TARGET FOLDER CHANGED</strong>
+          <span class="label">Next save location</span>
+          <div id="changedTarget" class="mono"></div>
+        </div>
+        <div class="grid">
+          <div class="field">
+            <span class="label">Current module</span>
+            <div id="moduleName" class="value"></div>
+          </div>
+          <div class="field">
+            <span class="label">Current file</span>
+            <div id="fileName" class="value file-name mono"></div>
+          </div>
+          <div class="field wide">
+            <span class="label">Current target folder</span>
+            <div id="targetFolder" class="value mono"></div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="label">File progress</span>
+            <strong id="fileProgress"></strong>
+          </div>
+          <div class="stat">
+            <span class="label">Group progress</span>
+            <strong id="groupProgress"></strong>
+          </div>
+          <div class="stat">
+            <span class="label">Module progress</span>
+            <strong id="moduleProgress"></strong>
+          </div>
+        </div>
+        <div class="progress-bar" aria-label="Overall progress">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+        <div class="buttons">
+          <button id="downloadBtn" class="primary" type="button">DOWNLOAD CURRENT FILE</button>
+          <button id="nextBtn" class="next" type="button">MARK SAVED &amp; NEXT</button>
+        </div>
+        <div class="secondary-buttons">
+          <button id="prevBtn" type="button">PREVIOUS</button>
+          <button id="resetBtn" type="button">RESET INSTALLER</button>
+        </div>
+        <p id="status" class="notice"></p>
+      </div>
+
+      <aside class="panel">
+        <h2>Directory Groups</h2>
+        <p class="notice">When the highlighted group changes, navigate the Save dialog to that folder once. Subsequent files in the same group should reuse the remembered location.</p>
+        <div id="groupList" class="group-list"></div>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    const BASE_TARGET = "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\261550\\";
+    const STORAGE_KEY = "gfn-bannerlord-installer-index-v1";
+    const MODULE_ORDER = ["Harmony", "ButterLib", "UIExtenderEx", "MCM", "BetterTime"];
+    const DIRECTORY_PRIORITY = [
+      "",
+      "bin\\Win64_Shipping_Client\\",
+      "AssetPackages\\",
+      "EmAssetPackages\\GauntletUI\\",
+      "GUI\\"
+    ];
+
+    let manifest = [];
+    let groups = [];
+    let files = [];
+    let index = 0;
+
+    const els = {
+      folderList: document.getElementById("folderList"),
+      groupList: document.getElementById("groupList"),
+      complete: document.getElementById("complete"),
+      targetChange: document.getElementById("targetChange"),
+      changedTarget: document.getElementById("changedTarget"),
+      moduleName: document.getElementById("moduleName"),
+      fileName: document.getElementById("fileName"),
+      targetFolder: document.getElementById("targetFolder"),
+      fileProgress: document.getElementById("fileProgress"),
+      groupProgress: document.getElementById("groupProgress"),
+      moduleProgress: document.getElementById("moduleProgress"),
+      progressFill: document.getElementById("progressFill"),
+      downloadBtn: document.getElementById("downloadBtn"),
+      nextBtn: document.getElementById("nextBtn"),
+      prevBtn: document.getElementById("prevBtn"),
+      resetBtn: document.getElementById("resetBtn"),
+      status: document.getElementById("status")
+    };
+
+    function moduleRank(name) {
+      const rank = MODULE_ORDER.indexOf(name);
+      return rank === -1 ? MODULE_ORDER.length : rank;
+    }
+
+    function directoryRank(targetDirectory, workshopId) {
+      const inside = targetDirectory.slice(workshopId.length + 1);
+      const rank = DIRECTORY_PRIORITY.indexOf(inside);
+      return rank === -1 ? DIRECTORY_PRIORITY.length : rank;
+    }
+
+    function compareFileNames(a, b) {
+      return a.filename.localeCompare(b.filename, "en", { numeric: true, sensitivity: "base" });
+    }
+
+    function buildGroups(records) {
+      const byDir = new Map();
+      for (const record of records) {
+        const key = `${record.workshopId}|${record.targetDirectory}`;
+        if (!byDir.has(key)) {
+          byDir.set(key, {
+            module: record.module,
+            workshopId: record.workshopId,
+            targetDirectory: record.targetDirectory,
+            files: []
+          });
+        }
+        byDir.get(key).files.push(record);
+      }
+      const result = [...byDir.values()];
+      for (const group of result) {
+        group.files.sort(compareFileNames);
+      }
+      result.sort((a, b) => {
+        const moduleDiff = moduleRank(a.module) - moduleRank(b.module);
+        if (moduleDiff) return moduleDiff;
+        const dirDiff = directoryRank(a.targetDirectory, a.workshopId) - directoryRank(b.targetDirectory, b.workshopId);
+        if (dirDiff) return dirDiff;
+        return a.targetDirectory.localeCompare(b.targetDirectory, "en");
+      });
+      let start = 0;
+      for (const group of result) {
+        group.start = start;
+        start += group.files.length;
+      }
+      return result;
+    }
+
+    function folderParents(targetDirectory) {
+      const parts = targetDirectory.split("\\").filter(Boolean);
+      const folders = [];
+      for (let i = 1; i <= parts.length; i += 1) {
+        folders.push(parts.slice(0, i).join("\\") + "\\");
+      }
+      return folders;
+    }
+
+    function renderFolderList() {
+      const folders = new Set();
+      for (const group of groups) {
+        for (const folder of folderParents(group.targetDirectory)) {
+          folders.add(folder);
+        }
+      }
+      els.folderList.replaceChildren(...[...folders].map(folder => {
+        const div = document.createElement("div");
+        div.className = "mono";
+        div.textContent = folder;
+        return div;
+      }));
+    }
+
+    function currentGroup() {
+      return groups.find(group => index >= group.start && index < group.start + group.files.length) || groups[groups.length - 1];
+    }
+
+    function currentGroupNumber() {
+      return groups.findIndex(group => index >= group.start && index < group.start + group.files.length) + 1;
+    }
+
+    function currentModuleNumber(record) {
+      return MODULE_ORDER.indexOf(record.module) + 1;
+    }
+
+    function isGroupStart() {
+      if (index === 0) return true;
+      return files[index - 1]?.targetDirectory !== files[index]?.targetDirectory;
+    }
+
+    function saveIndex() {
+      localStorage.setItem(STORAGE_KEY, String(index));
+    }
+
+    function renderGroups(activeGroupNumber) {
+      els.groupList.replaceChildren(...groups.map((group, groupIndex) => {
+        const div = document.createElement("div");
+        div.className = groupIndex + 1 === activeGroupNumber ? "current-group mono" : "mono";
+        div.textContent = `${groupIndex + 1}. ${group.module}: ${group.targetDirectory} (${group.files.length})`;
+        return div;
+      }));
+    }
+
+    function render() {
+      const done = index >= files.length;
+      els.complete.classList.toggle("active", done);
+      els.downloadBtn.disabled = done;
+      els.nextBtn.disabled = done;
+      els.prevBtn.disabled = index <= 0;
+
+      if (done) {
+        els.targetChange.classList.remove("active");
+        els.moduleName.textContent = "Complete";
+        els.fileName.textContent = "Complete";
+        els.targetFolder.textContent = "";
+        els.fileProgress.textContent = `${files.length} / ${files.length}`;
+        els.groupProgress.textContent = `${groups.length} / ${groups.length}`;
+        els.moduleProgress.textContent = `${MODULE_ORDER.length} / ${MODULE_ORDER.length}`;
+        els.progressFill.style.width = "100%";
+        renderGroups(groups.length);
+        els.status.textContent = "All payload files have been stepped through.";
+        return;
+      }
+
+      const record = files[index];
+      const group = currentGroup();
+      const groupNumber = currentGroupNumber();
+      const moduleNumber = currentModuleNumber(record);
+
+      els.moduleName.textContent = record.module;
+      els.fileName.textContent = record.filename;
+      els.targetFolder.textContent = record.targetDirectory;
+      els.changedTarget.textContent = record.targetDirectory;
+      els.fileProgress.textContent = `${index + 1} / ${files.length}`;
+      els.groupProgress.textContent = `${groupNumber} / ${groups.length}`;
+      els.moduleProgress.textContent = `${moduleNumber} / ${MODULE_ORDER.length}`;
+      els.progressFill.style.width = `${(index / files.length) * 100}%`;
+      els.targetChange.classList.toggle("active", isGroupStart());
+      renderGroups(groupNumber);
+
+      const positionInGroup = index - group.start + 1;
+      els.status.textContent = `File ${positionInGroup} of ${group.files.length} in this target folder.`;
+    }
+
+    function downloadCurrentFile() {
+      if (index >= files.length) return;
+      const record = files[index];
+      const link = document.createElement("a");
+      link.href = `payload/${record.relativePath}`;
+      link.download = record.filename;
+      link.rel = "noopener";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      els.status.textContent = "Download started. After saving it to the displayed folder, click MARK SAVED & NEXT.";
+    }
+
+    function nextFile() {
+      if (index < files.length) {
+        index += 1;
+        saveIndex();
+        render();
+      }
+    }
+
+    function previousFile() {
+      if (index > 0) {
+        index -= 1;
+        saveIndex();
+        render();
+      }
+    }
+
+    function resetInstaller() {
+      if (!confirm("Reset installer progress to the first file?")) return;
+      index = 0;
+      saveIndex();
+      render();
+    }
+
+    async function init() {
+      const response = await fetch("payload-manifest.json", { cache: "no-store" });
+      manifest = await response.json();
+      groups = buildGroups(manifest);
+      files = groups.flatMap(group => group.files);
+      const stored = Number.parseInt(localStorage.getItem(STORAGE_KEY) || "0", 10);
+      index = Number.isFinite(stored) ? Math.min(Math.max(stored, 0), files.length) : 0;
+      renderFolderList();
+      render();
+    }
+
+    els.downloadBtn.addEventListener("click", downloadCurrentFile);
+    els.nextBtn.addEventListener("click", nextFile);
+    els.prevBtn.addEventListener("click", previousFile);
+    els.resetBtn.addEventListener("click", resetInstaller);
+
+    init().catch(error => {
+      els.status.textContent = `Installer manifest could not be loaded: ${error.message}`;
+      els.downloadBtn.disabled = true;
+      els.nextBtn.disabled = true;
+      els.prevBtn.disabled = true;
+    });
+  </script>
+</body>
+</html>
