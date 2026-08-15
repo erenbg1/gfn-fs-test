@@ -34,6 +34,9 @@ pre { white-space:pre-wrap; }
 
 
 <button id="batch3">9 — TEST: Download 3 Files</button>
+<button id="nextfile">10 — NEXT FILE TEST</button>
+<button id="resetnext">Reset Next Test</button>
+
 <div id="drop">
 5 — DRAG A FILE OR FOLDER HERE
 </div>
@@ -145,6 +148,45 @@ document.getElementById("batch3").onclick = async () => {
   }
 
   out("BATCH3 DONE");
+};
+
+
+let nextIndex = 0;
+
+const nextFiles = [
+  ["GFN_NEXT_1.txt", "next file one"],
+  ["GFN_NEXT_2.txt", "next file two"],
+  ["GFN_NEXT_3.txt", "next file three"]
+];
+
+document.getElementById("nextfile").onclick = () => {
+  if (nextIndex >= nextFiles.length) {
+    out("NEXT TEST COMPLETE");
+    return;
+  }
+
+  const [name, text] = nextFiles[nextIndex];
+
+  const blob = new Blob([text], {type:"text/plain"});
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  out("NEXT " + (nextIndex + 1) + "/3: " + name);
+
+  nextIndex++;
+
+  setTimeout(() => URL.revokeObjectURL(url), 5000);
+};
+
+document.getElementById("resetnext").onclick = () => {
+  nextIndex = 0;
+  out("NEXT TEST RESET");
 };
 
 function blobDownload(filename, text) {
