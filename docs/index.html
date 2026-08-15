@@ -1,69 +1,149 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>GFN File System API Test</title>
+<meta charset="utf-8">
+<title>GFN FS API Lab v2</title>
+<style>
+body { font-family: sans-serif; padding: 20px; }
+button { display:block; margin:10px 0; padding:10px; }
+#drop {
+  border:2px dashed #777;
+  padding:30px;
+  margin-top:20px;
+}
+pre { white-space:pre-wrap; }
+</style>
 </head>
 <body>
-  <h2>GFN File System Access Test</h2>
 
-  <p id="status">Checking API...</p>
+<h2>GFN File System API Lab v2</h2>
 
-  <button id="test">Select Folder & Write Test File</button>
+<div id="caps"></div>
 
-  <pre id="log"></pre>
+<button id="dir">1 — showDirectoryPicker</button>
+<button id="open">2 — showOpenFilePicker</button>
+<button id="save">3 — showSaveFilePicker</button>
+
+<p>4 — webkitdirectory:</p>
+<input id="webkit" type="file" webkitdirectory multiple>
+
+<div id="drop">
+5 — DRAG A FILE OR FOLDER HERE
+</div>
+
+<pre id="log"></pre>
 
 <script>
-const status = document.getElementById("status");
 const log = document.getElementById("log");
+const caps = document.getElementById("caps");
 
 function out(x) {
   log.textContent += x + "\n";
 }
 
-if (typeof window.showDirectoryPicker === "function") {
-  status.textContent = "showDirectoryPicker: AVAILABLE";
-} else {
-  status.textContent = "showDirectoryPicker: NOT AVAILABLE";
-}
+caps.innerHTML =
+  "showDirectoryPicker: " + typeof window.showDirectoryPicker + "<br>" +
+  "showOpenFilePicker: " + typeof window.showOpenFilePicker + "<br>" +
+  "showSaveFilePicker: " + typeof window.showSaveFilePicker + "<br>" +
+  "getAsFileSystemHandle: " +
+  typeof DataTransferItem.prototype.getAsFileSystemHandle;
 
-document.getElementById("test").onclick = async () => {
+document.getElementById("dir").onclick = async () => {
   try {
-    out("Opening directory picker...");
+    out("DIR: opening...");
+    const h = await showDirectoryPicker({mode:"readwrite"});
+    out("DIR SUCCESS: " + h.name);
+  } catch(e) {
+    out("DIR ERROR: " + e.name + " — " + e.message);
+  }
+};
 
-    const dir = await window.showDirectoryPicker({
-      mode: "readwrite"
+document.getElementById("open").onclick = async () => {
+  try {
+    out("OPEN: opening...");
+    const h = await showOpenFilePicker({multiple:true});
+    out("OPEN SUCCESS:");
+    for (const x of h) out(x.kind + " — " + x.name);
+  } catch(e) {
+    out("OPEN ERROR: " + e.name + " — " + e.message);
+  }
+};
+
+document.getElementById("save").onclick = async () => {
+  try {
+    out("SAVE: opening...");
+    const h = await showSaveFilePicker({
+      suggestedName:"GFN_SAVE_TEST.txt"
     });
 
-    out("Selected: " + dir.name);
+    out("SAVE HANDLE: " + h.name);
 
-    const folder = await dir.getDirectoryHandle("GFNProbe", {
-      create: true
-    });
+    const w = await h.createWritable();
+    await w.write("GFN Steam Overlay write test");
+    await w.close();
 
-    out("Created/opened GFNProbe");
+    out("SAVE WRITE SUCCESS");
+  } catch(e) {
+    out("SAVE ERROR: " + e.name + " — " + e.message);
+  }
+};
 
-    const file = await folder.getFileHandle("hello.txt", {
-      create: true
-    });
+document.getElementById("webkit").onchange = e => {
+  out("WEBKITDIRECTORY FILES: " + e.target.files.length);
 
-    const writable = await file.createWritable();
+  for (const f of e.target.files) {
+    out(f.webkitRelativePath + " — " + f.size);
+  }
+};
 
-    await writable.write(
-      "GFN filesystem write test\n" +
-      new Date().toISOString()
-    );
+const drop = document.getElementById("drop");
 
-    await writable.close();
+drop.ondragover = e => {
+  e.preventDefault();
+  drop.style.background = "#ddd";
+};
 
-    out("SUCCESS");
-    out("Created: GFNProbe/hello.txt");
-  } catch (e) {
-    out("ERROR");
-    out(e.name + ": " + e.message);
-    console.error(e);
+drop.ondragleave = () => {
+  drop.style.background = "";
+};
+
+drop.ondrop = async e => {
+  e.preventDefault();
+  drop.style.background = "";
+
+  out("DROP ITEMS: " + e.dataTransfer.items.length);
+
+  for (const item of e.dataTransfer.items) {
+    out("DROP: kind=" + item.kind + " type=" + item.type);
+
+    if (item.getAsFileSystemHandle) {
+      try {
+        const h = await item.getAsFileSystemHandle();
+        out("HANDLE: " + h.kind + " — " + h.name);
+
+        if (h.kind === "directory") {
+          try {
+            const test = await h.getFileHandle(
+              "GFN_DRAG_WRITE_TEST.txt",
+              {create:true}
+            );
+
+            const w = await test.createWritable();
+            await w.write("GFN drag/drop filesystem write test");
+            await w.close();
+
+            out("DRAG DIRECTORY WRITE SUCCESS");
+          } catch(err) {
+            out("DRAG WRITE ERROR: " + err.name + " — " + err.message);
+          }
+        }
+      } catch(err) {
+        out("HANDLE ERROR: " + err.name + " — " + err.message);
+      }
+    }
   }
 };
 </script>
+
 </body>
 </html>
